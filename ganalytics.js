@@ -7,7 +7,7 @@ GAnalytics.event = function(category, action, label, value) {
     console.log("Analytics code is not loaded yet.");
   };
 
-var host = '//localhost:4000/';
+var host = '//localhost:4000';
 load = function(i,s,o,g,r,a,m) {
   i['GoogleAnalyticsObject']=r;
   i[r]=i[r] || function(){
