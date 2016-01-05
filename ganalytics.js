@@ -7,7 +7,7 @@ GAnalytics.event = function(category, action, label, value) {
     console.log("Analytics code is not loaded yet.");
   };
 
-
+var host = '127.0.0.1:4000';
 load = function(i,s,o,g,r,a,m) {
   i['GoogleAnalyticsObject']=r;
   i[r]=i[r] || function(){
@@ -21,7 +21,7 @@ load = function(i,s,o,g,r,a,m) {
 
 if(Meteor.settings && Meteor.settings.public !== undefined && Meteor.settings.public.ga !== undefined && Meteor.settings.public.ga.account !== undefined) {
 
-  load(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  load(window,document,'script',host+'/analytics.js','ga');
 
   var gaSettings = Meteor.settings.public.ga,
       gaConfig = {};
