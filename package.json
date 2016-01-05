@@ -1,0 +1,24 @@
+{
+  "name": "meteor-ganalytics",
+  "version": "1.0.0",
+  "description": "GAnalytics: Google Analytics for Meteor ===================================",
+  "main": "ganalytics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskarmelkani/meteor-ganalytics.git"
+  },
+  "author": "Bhaskar Melkani <melkani.bhaskar@gmail.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaskarmelkani/meteor-ganalytics/issues"
+  },
+  "homepage": "https://github.com/bhaskarmelkani/meteor-ganalytics#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "forever": "^0.15.1",
+    "http-proxy": "^1.12.0"
+  }
+}
